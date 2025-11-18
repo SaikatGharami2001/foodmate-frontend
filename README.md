@@ -1,3 +1,3 @@
 git add .
-git commit -m "Update: worked on the feed api"
+git commit -m "Update: set up the folder structure"
 git push
