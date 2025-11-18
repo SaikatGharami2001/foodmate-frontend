@@ -1,4 +1,5 @@
-const Card = () => {
+const Card = (props) => {
+  const { name, status, howMuchRich } = props;
   return (
     <>
       <div className="card bg-base-200 w-66 shadow-sm my-5">
@@ -9,13 +10,10 @@ const Card = () => {
           />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">Card Title</h2>
-          <p>
-            A card component has a figure, a body part, and inside body there
-            are title and actions parts
-          </p>
+          <h2 className="card-title">{name}</h2>
+          <p>{status}</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
+            <button className="btn btn-primary">{howMuchRich}</button>
           </div>
         </div>
       </div>

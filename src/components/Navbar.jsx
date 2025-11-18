@@ -2,9 +2,34 @@ const Navbar = () => {
   return (
     <div className="navbar bg-base-300 shadow-sm">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">Food Mate</a>
+        <a className="btn btn-ghost text-xl">Food Mate 🍗</a>
       </div>
       <div className="flex gap-2 mx-6">
+        {/*  */}
+        {/* Menus  */}
+        {/*  */}
+
+        <a
+          href=""
+          className="input input-bordered w-24 md:w-auto cursor-pointer"
+        >
+          Home
+        </a>
+
+        <a
+          href=""
+          className="input input-bordered w-24 md:w-auto cursor-pointer"
+        >
+          About Us
+        </a>
+
+        <a
+          href=""
+          className="input input-bordered w-24 md:w-auto cursor-pointer"
+        >
+          Contact
+        </a>
+
         {/*  */}
         {/* Input Box Cart  */}
         {/*  */}
