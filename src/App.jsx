@@ -1,7 +1,11 @@
+import Navbar from "./components/Navbar";
+import Card from "./components/Card";
+
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">Rich</h1>
+      <Navbar />
+      <Card />
     </>
   );
 }
