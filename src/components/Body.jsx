@@ -16,40 +16,48 @@ const Body = () => {
   }, []);
 
   return (
-    <div className="max-w-7xl mx-auto px-6 pt-10 pb-20">
-      {/* SEARCH + FILTERS */}
-      <div className="flex flex-col md:flex-row justify-between gap-6 mb-8">
-        {/* Filters */}
-        <div className="flex flex-wrap gap-3">
-          <button className="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-300 rounded-lg hover:bg-gray-800 transition text-sm">
-            ⭐ Top Rated
-          </button>
-          <button className="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-300 rounded-lg hover:bg-gray-800 transition text-sm">
-            💸 Budget Friendly
-          </button>
-          <button className="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-300 rounded-lg hover:bg-gray-800 transition text-sm">
-            🥗 Pure Veg
-          </button>
-          <button className="px-4 py-2 bg-gray-900 border border-gray-800 text-gray-300 rounded-lg hover:bg-gray-800 transition text-sm">
-            🕒 Fast Delivery
-          </button>
-        </div>
+    <div className="w-full max-w-screen-xl mx-auto px-6 pt-6 pb-4">
+      {/* FILTERS */}
+      <div className="flex flex-wrap gap-4 mb-10">
+        {/* Top Rated */}
+        <button
+          className="px-5 py-3 bg-[#0F131A] border border-[#2a3140] text-gray-200 rounded-xl 
+                           hover:border-[#F7B500] hover:text-[#F7B500] transition font-medium text-[15px] 
+                           flex items-center gap-2 shadow-sm"
+        >
+          ⭐ Top Rated
+        </button>
 
-        {/* Search */}
-        <div className="w-full md:w-80 relative">
-          <input
-            type="text"
-            placeholder="Search restaurants..."
-            className="w-full bg-[#0f0f0f] border border-gray-800 text-gray-300 px-4 py-3 rounded-xl focus:outline-none focus:border-blue-600 transition"
-          />
-          <span className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500">
-            🔍
-          </span>
-        </div>
+        {/* Budget Friendly */}
+        <button
+          className="px-5 py-3 bg-[#0F131A] border border-[#2a3140] text-gray-200 rounded-xl 
+                           hover:border-[#4ADE80] hover:text-[#4ADE80] transition font-medium text-[15px] 
+                           flex items-center gap-2 shadow-sm"
+        >
+          🪙 Budget Friendly
+        </button>
+
+        {/* Pure Veg */}
+        <button
+          className="px-5 py-3 bg-[#0F131A] border border-[#2a3140] text-gray-200 rounded-xl 
+                           hover:border-[#FF5C8A] hover:text-[#FF5C8A] transition font-medium text-[15px] 
+                           flex items-center gap-2 shadow-sm"
+        >
+          🥗 Pure Veg
+        </button>
+
+        {/* Fast Delivery */}
+        <button
+          className="px-5 py-3 bg-[#0F131A] border border-[#2a3140] text-gray-200 rounded-xl 
+                           hover:border-[#4da3ff] hover:text-[#4da3ff] transition font-medium text-[15px] 
+                           flex items-center gap-2 shadow-sm"
+        >
+          ⏱ Fast Delivery
+        </button>
       </div>
 
       {/* GRID */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {cardData
           .filter((item) => item?.card?.card?.info)
           .map((item, index) => (

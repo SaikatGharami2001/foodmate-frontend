@@ -6,9 +6,18 @@ import Body from "./components/Body";
 function App() {
   return (
     <>
-      <Navbar />
-      <Body />
-      <Footer />
+      <div className="min-h-screen flex flex-col bg-[#111827]">
+        {/* Navbar stays at top */}
+        <Navbar />
+
+        {/* Body grows */}
+        <div className="flex-grow">
+          <Body />
+        </div>
+
+        {/* Footer stays at bottom */}
+        <Footer />
+      </div>
     </>
   );
 }

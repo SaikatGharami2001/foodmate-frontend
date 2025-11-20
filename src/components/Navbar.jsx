@@ -1,129 +1,59 @@
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-300 shadow-sm">
-      <div className="flex-1">
-        <a className="btn btn-ghost text-xl">Food Mate 🍗</a>
-      </div>
-      <div className="flex gap-2 mx-6">
-        {/*  */}
-        {/* Menus  */}
-        {/*  */}
+    <nav className="w-full bg-[#0B0F15] border-b border-[#1a1f27] sticky top-0 z-50 shadow-lg shadow-black/20">
+      <div className="max-w-screen-xl mx-auto px-6 py-4 flex items-center justify-between gap-8">
+        {/* LEFT — LOGO + MENU */}
+        <div className="flex items-center gap-12">
+          <div className="text-3xl font-extrabold tracking-tight cursor-pointer select-none">
+            <span className="text-white">Food</span>
+            <span className="text-[#F7B500]">Mate</span>
+            <span className="text-[#FF5C8A]">🍗</span>
+          </div>
 
-        <a
-          href=""
-          className="input input-bordered w-24 md:w-auto cursor-pointer"
-        >
-          Home
-        </a>
-
-        <a
-          href=""
-          className="input input-bordered w-24 md:w-auto cursor-pointer"
-        >
-          About Us
-        </a>
-
-        <a
-          href=""
-          className="input input-bordered w-24 md:w-auto cursor-pointer"
-        >
-          Contact
-        </a>
-
-        {/*  */}
-        {/* Input Box Cart  */}
-        {/*  */}
-
-        <input
-          type="text"
-          placeholder="Search"
-          className="input input-bordered w-24 md:w-auto"
-        />
-
-        {/*  */}
-        {/* Shopping Logo  */}
-        {/*  */}
-
-        <div className="flex-none">
-          <div className="dropdown dropdown-end">
-            <div
-              tabIndex={0}
-              role="button"
-              className="btn btn-ghost btn-circle"
-            >
-              <div className="indicator">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  {" "}
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                  />{" "}
-                </svg>
-                <span className="badge badge-sm indicator-item">8</span>
-              </div>
-            </div>
-            <div
-              tabIndex={0}
-              className="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow"
-            >
-              <div className="card-body">
-                <span className="text-lg font-bold">8 Items</span>
-                <span className="text-info">Subtotal: $999</span>
-                <div className="card-actions">
-                  <button className="btn btn-primary btn-block">
-                    View cart
-                  </button>
-                </div>
-              </div>
-            </div>
+          {/* MENU */}
+          <div className="hidden md:flex items-center gap-8 text-gray-300 text-[15px] font-medium">
+            <a className="hover:text-[#F7B500] transition cursor-pointer">
+              Home
+            </a>
+            <a className="hover:text-[#F7B500] transition cursor-pointer">
+              About Us
+            </a>
+            <a className="hover:text-[#F7B500] transition cursor-pointer">
+              Contact
+            </a>
           </div>
         </div>
 
-        {/*  */}
-        {/* Profile Logo  */}
-        {/*  */}
+        {/* CENTER — SEARCH */}
+        <div className="hidden md:flex flex-1 max-w-md items-center bg-[#0F131A] border border-[#2a3140] rounded-xl px-4 py-2 focus-within:border-[#4ADE80] transition">
+          <input
+            type="text"
+            placeholder="Search restaurants or cuisines…"
+            className="bg-transparent text-gray-300 placeholder-gray-500 focus:outline-none w-full text-sm"
+          />
+          <span className="text-gray-400 text-lg">🔍</span>
+        </div>
 
-        <div className="dropdown dropdown-end ">
-          <div
-            tabIndex={0}
-            role="button"
-            className="btn btn-ghost btn-circle avatar"
-          >
-            <div className="w-10 rounded-full">
-              <img
-                alt="Tailwind CSS Navbar component"
-                src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
-              />
-            </div>
+        {/* RIGHT — CART + PROFILE */}
+        <div className="flex items-center gap-6">
+          {/* CART */}
+          <button className="relative p-2 rounded-full hover:bg-[#141a22] transition">
+            <span className="text-[#F7B500] text-xl">🛒</span>
+            <span className="absolute -top-1 -right-1 bg-[#FF5C8A] text-white text-[10px] px-[6px] py-[1px] rounded-full shadow-md font-semibold">
+              8
+            </span>
+          </button>
+
+          {/* PROFILE */}
+          <div className="w-11 h-11 rounded-full overflow-hidden border border-[#2d3340] shadow-md cursor-pointer hover:scale-105 hover:border-[#4ADE80] transition-all">
+            <img
+              src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+              className="w-full h-full object-cover"
+            />
           </div>
-          <ul
-            tabIndex="-1"
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
-          >
-            <li>
-              <a className="justify-between">
-                Profile
-                <span className="badge">New</span>
-              </a>
-            </li>
-            <li>
-              <a>Settings</a>
-            </li>
-            <li>
-              <a>Logout</a>
-            </li>
-          </ul>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 
