@@ -5,9 +5,11 @@ const Navbar = () => {
         {/* LEFT — LOGO + MENU */}
         <div className="flex items-center gap-12">
           <div className="text-3xl font-extrabold tracking-tight cursor-pointer select-none">
-            <span className="text-white">Food</span>
-            <span className="text-[#F7B500]">Mate</span>
-            <span className="text-[#FF5C8A]">🍗</span>
+            <a href="/">
+              <span className="text-white">Food</span>
+              <span className="text-[#F7B500]">Mate</span>
+              <span className="text-[#FF5C8A]">🍗</span>
+            </a>
           </div>
 
           {/* MENU */}
