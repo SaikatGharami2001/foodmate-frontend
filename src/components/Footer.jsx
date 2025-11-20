@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center shadow-lg shadow-indigo-500/20">
               <span className="text-white font-bold text-xl">F</span>
             </div>
-            <h2 className="text-white font-semibold text-xl">FoodX</h2>
+            <h2 className="text-white font-semibold text-xl">FoodMate</h2>
           </div>
 
           <p className="text-gray-400 text-sm leading-relaxed">
@@ -93,7 +93,7 @@ const Footer = () => {
       {/* Bottom */}
       <div className="border-t border-gray-700/40 py-5">
         <p className="text-center text-gray-500 text-sm">
-          © {new Date().getFullYear()} FoodX · All rights reserved.
+          © {new Date().getFullYear()} FoodMate · All rights reserved.
         </p>
       </div>
     </footer>

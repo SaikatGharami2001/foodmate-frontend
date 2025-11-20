@@ -22,7 +22,7 @@ const Body = () => {
 
   const topRated = () => {
     const topRatedCards = allData.filter(
-      (res) => res?.card?.card?.info?.avgRating >= 4.5
+      (res) => res?.card?.card?.info?.avgRating >= 4.2
     );
     setFilteredData(topRatedCards);
   };
@@ -32,8 +32,8 @@ const Body = () => {
   const budgetFriendly = () => {
     const budgetFriendlyCards = allData.filter((res) => {
       const costString = res.card?.card?.info?.costForTwo;
-      const costNumber = Number(costString?.split("")[0]?.replace("₹", ""));
-      return costNumber <= 300;
+      const costNumber = Number(costString?.replace(/[^0-9]/g, ""));
+      return costNumber <= 100;
     });
     setFilteredData(budgetFriendlyCards);
   };
@@ -45,6 +45,15 @@ const Body = () => {
       return res?.card?.card?.info?.veg === true;
     });
     setFilteredData(pureVegCards);
+  };
+
+  // Non Veg Logic
+
+  const nonVeg = () => {
+    const nonVegCards = allData.filter(
+      (res) => res?.card?.card?.info?.veg !== true
+    );
+    setFilteredData(nonVegCards);
   };
 
   // Fast Delivery Logic
@@ -88,6 +97,16 @@ const Body = () => {
                            flex items-center gap-2 shadow-sm"
         >
           🥗 Pure Veg
+        </button>
+
+        {/* Non Veg */}
+        <button
+          onClick={nonVeg}
+          className="px-5 py-3 bg-[#0F131A] border border-[#2a3140] text-gray-200 rounded-xl 
+                           hover:border-[#FF5C8A] hover:text-[#FF5C8A] transition font-medium text-[15px] 
+                           flex items-center gap-2 shadow-sm"
+        >
+          🍗 Non Veg
         </button>
 
         {/* Fast Delivery */}

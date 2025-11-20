@@ -14,7 +14,10 @@ const Navbar = () => {
 
           {/* MENU */}
           <div className="hidden md:flex items-center gap-8 text-gray-300 text-[15px] font-medium">
-            <a className="hover:text-[#F7B500] transition cursor-pointer">
+            <a
+              href="/"
+              className="hover:text-[#F7B500] transition cursor-pointer"
+            >
               Home
             </a>
             <a className="hover:text-[#F7B500] transition cursor-pointer">
