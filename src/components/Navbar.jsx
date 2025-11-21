@@ -1,4 +1,4 @@
-const Navbar = () => {
+const Navbar = ({ handleSearch }) => {
   return (
     <nav className="w-full bg-[#0B0F15] border-b border-[#1a1f27] sticky top-0 z-50 shadow-lg shadow-black/20">
       <div className="max-w-screen-xl mx-auto px-6 py-4 flex items-center justify-between gap-8">
@@ -34,6 +34,7 @@ const Navbar = () => {
           <input
             type="text"
             placeholder="Search restaurants or cuisines…"
+            onChange={handleSearch}
             className="bg-transparent text-gray-300 placeholder-gray-500 focus:outline-none w-full text-sm"
           />
           <span className="text-gray-400 text-lg">🔍</span>
