@@ -24,14 +24,15 @@ function App() {
       setFilteredData(null);
       return;
     }
+
     const matched = allData.filter((res) => {
       const cuisines = res?.card?.card?.info?.cuisines || [];
       const name = res?.card?.card?.info?.name || "";
-      return cuisines.some(
-        (res) =>
-          res.toLowerCase().includes(value) ||
-          name.toLowerCase().includes(value)
+      const cuisinesMatch = cuisines.some((res) =>
+        res.toLowerCase().includes(value)
       );
+      const nameMatch = name.toLowerCase().includes(value);
+      return cuisinesMatch || nameMatch;
     });
 
     setFilteredData(matched);
