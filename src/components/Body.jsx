@@ -1,27 +1,22 @@
 import Card from "./Card";
+import ShimmerCard from "./ShimmerUI";
 
 const Body = ({ allData, filteredData, setFilteredData }) => {
   const dataToShow = filteredData === null ? allData : filteredData;
-  const dataToFilter = Array.isArray(dataToShow) ? dataToShow : [];
 
   // All Restaurants Logic
-
   const allRestaurants = () => {
     const allRestaurantsCards = allData?.filter((res) => res?.card?.card?.info);
     setFilteredData(allRestaurantsCards);
   };
-
   // Top Rating Logic
-
   const topRated = () => {
     const topRatedCards = allData?.filter(
       (res) => res?.card?.card?.info?.avgRating >= 4.2
     );
     setFilteredData(topRatedCards);
   };
-
   // Budget Friendly Logic
-
   const budgetFriendly = () => {
     const budgetFriendlyCards = allData?.filter((res) => {
       const costString = res.card?.card?.info?.costForTwo;
@@ -30,33 +25,42 @@ const Body = ({ allData, filteredData, setFilteredData }) => {
     });
     setFilteredData(budgetFriendlyCards);
   };
-
   // Pure Veg Logic
-
   const pureVeg = () => {
     const pureVegCards = allData?.filter((res) => {
       return res?.card?.card?.info?.veg === true;
     });
     setFilteredData(pureVegCards);
   };
-
   // Non Veg Logic
-
   const nonVeg = () => {
     const nonVegCards = allData?.filter(
       (res) => res?.card?.card?.info?.veg !== true
     );
     setFilteredData(nonVegCards);
   };
-
   // Fast Delivery Logic
-
   const fastDelivery = () => {
     const fastDeliveryCards = allData?.filter(
       (res) => res?.card?.card?.info?.sla?.deliveryTime <= 25
     );
     setFilteredData(fastDeliveryCards);
   };
+
+  if (allData.length === 0)
+    return (
+      <>
+        <ShimmerCard />
+      </>
+    );
+
+  if (filteredData !== null && filteredData.length === 0) {
+    return (
+      <div className="text-center text-gray-400 text-xl py-20">
+        ❌ No restaurants found
+      </div>
+    );
+  }
 
   return (
     <div className="w-full max-w-screen-xl mx-auto px-6 pt-6 pb-4">
@@ -125,7 +129,7 @@ const Body = ({ allData, filteredData, setFilteredData }) => {
 
       {/* GRID */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        {dataToFilter
+        {dataToShow
           ?.filter((item) => item?.card?.card?.info)
           ?.map((item, index) => (
             <Card key={index} resData={item} />

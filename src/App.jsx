@@ -28,6 +28,7 @@ function App() {
     const matched = allData.filter((res) => {
       const cuisines = res?.card?.card?.info?.cuisines || [];
       const name = res?.card?.card?.info?.name || "";
+
       const cuisinesMatch = cuisines.some((res) =>
         res.toLowerCase().includes(value)
       );
