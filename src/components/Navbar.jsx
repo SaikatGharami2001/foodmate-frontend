@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Navbar = ({ handleSearch }) => {
   return (
     <nav className="w-full bg-[#0B0F15] border-b border-[#1a1f27] sticky top-0 z-50 shadow-lg shadow-black/20">
@@ -5,27 +7,27 @@ const Navbar = ({ handleSearch }) => {
         {/* LEFT — LOGO + MENU */}
         <div className="flex items-center gap-12">
           <div className="text-3xl font-extrabold tracking-tight cursor-pointer select-none">
-            <a href="/">
+            <Link href="/">
               <span className="text-white">Food</span>
               <span className="text-[#F7B500]">Mate</span>
               <span className="text-[#FF5C8A]">🍗</span>
-            </a>
+            </Link>
           </div>
 
           {/* MENU */}
           <div className="hidden md:flex items-center gap-8 text-gray-300 text-[15px] font-medium">
-            <a
+            <Link
               href="/"
               className="hover:text-[#F7B500] transition cursor-pointer"
             >
               Home
-            </a>
-            <a className="hover:text-[#F7B500] transition cursor-pointer">
+            </Link>
+            <Link className="hover:text-[#F7B500] transition cursor-pointer">
               About Us
-            </a>
-            <a className="hover:text-[#F7B500] transition cursor-pointer">
+            </Link>
+            <Link className="hover:text-[#F7B500] transition cursor-pointer">
               Contact
-            </a>
+            </Link>
           </div>
         </div>
 
