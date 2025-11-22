@@ -2,7 +2,8 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
 import App from "./App.jsx";
-import Body from "./components/Body.jsx";
+import Body from "./components/Body";
+import ResMenu from "./components/ResMenu";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
@@ -20,6 +21,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/",
         element: <Body />,
+      },
+      {
+        path: "/restaurant/:resId",
+        element: <ResMenu />,
       },
       {
         path: "/about",

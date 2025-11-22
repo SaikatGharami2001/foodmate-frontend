@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { useContext } from "react";
 import { DataContext } from "../App";
 
@@ -137,7 +139,12 @@ const Body = () => {
         {dataToShow
           ?.filter((item) => item?.card?.card?.info)
           ?.map((item, index) => (
-            <Card key={index} resData={item} />
+            <Link
+              key={item.card.card.info.id}
+              to={`/restaurant/${item.card.card.info.id}`}
+            >
+              <Card key={index} resData={item} />
+            </Link>
           ))}
       </div>
     </div>
