@@ -1,7 +1,12 @@
+import { useContext } from "react";
+import { DataContext } from "../App";
+
 import Card from "./Card";
 import ShimmerCard from "./ShimmerUI";
 
-const Body = ({ allData, filteredData, setFilteredData }) => {
+const Body = () => {
+  const { allData, filteredData, setFilteredData } = useContext(DataContext);
+
   const dataToShow = filteredData === null ? allData : filteredData;
 
   // All Restaurants Logic

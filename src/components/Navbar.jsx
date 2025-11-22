@@ -1,13 +1,18 @@
+import { useContext } from "react";
+import { DataContext } from "../App";
+
 import { Link } from "react-router-dom";
 
-const Navbar = ({ handleSearch }) => {
+const Navbar = () => {
+  const { handleSearch, setFilteredData } = useContext(DataContext);
+
   return (
     <nav className="w-full bg-[#0B0F15] border-b border-[#1a1f27] sticky top-0 z-50 shadow-lg shadow-black/20">
       <div className="max-w-screen-xl mx-auto px-6 py-4 flex items-center justify-between gap-8">
         {/* LEFT — LOGO + MENU */}
         <div className="flex items-center gap-12">
           <div className="text-3xl font-extrabold tracking-tight cursor-pointer select-none">
-            <Link href="/">
+            <Link to="/" onClick={() => setFilteredData(null)}>
               <span className="text-white">Food</span>
               <span className="text-[#F7B500]">Mate</span>
               <span className="text-[#FF5C8A]">🍗</span>
@@ -17,15 +22,22 @@ const Navbar = ({ handleSearch }) => {
           {/* MENU */}
           <div className="hidden md:flex items-center gap-8 text-gray-300 text-[15px] font-medium">
             <Link
-              href="/"
+              to="/"
+              onClick={() => setFilteredData(null)}
               className="hover:text-[#F7B500] transition cursor-pointer"
             >
               Home
             </Link>
-            <Link className="hover:text-[#F7B500] transition cursor-pointer">
+            <Link
+              to="/about"
+              className="hover:text-[#F7B500] transition cursor-pointer"
+            >
               About Us
             </Link>
-            <Link className="hover:text-[#F7B500] transition cursor-pointer">
+            <Link
+              to="/contact"
+              className="hover:text-[#F7B500] transition cursor-pointer"
+            >
               Contact
             </Link>
           </div>

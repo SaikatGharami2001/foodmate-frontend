@@ -1,12 +1,11 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, createContext } from "react";
+import { Outlet } from "react-router-dom";
 import { API_LINK } from "./utils/utils";
 
 import Navbar from "./components/Navbar";
-import Body from "./components/Body";
 import Footer from "./components/Footer";
-import About from "./components/About";
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+export const DataContext = createContext();
 
 function App() {
   const [allData, setAllData] = useState([]);
@@ -43,31 +42,20 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#111827]">
-      <Navbar allData={allData} handleSearch={handleSearch} />
+    <DataContext.Provider
+      value={{ allData, filteredData, setFilteredData, handleSearch }}
+    >
+      <div className="min-h-screen flex flex-col bg-[#111827]">
+        <Navbar />
 
-      <div className="flex-grow">
-        <Body
-          allData={allData}
-          filteredData={filteredData}
-          setFilteredData={setFilteredData}
-        />
+        <div className="flex-grow">
+          <Outlet />
+        </div>
+
+        <Footer />
       </div>
-
-      <Footer />
-    </div>
+    </DataContext.Provider>
   );
 }
-
-const appRouter = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-  },
-  {
-    path: "/about",
-    element: <About />,
-  },
-]);
 
 export default App;
