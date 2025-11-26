@@ -1,7 +1,7 @@
-🍽️ Food Mate – React + Zustand
+🍽️ Food Mate – React + Zustand + Tailwind
 
-A fast, responsive food-delivery UI inspired by Swiggy.
-This project focuses on component-driven UI, global state management, and clean React architecture.
+A fast and responsive food-delivery UI inspired by Swiggy.
+Built with React, Zustand, and Tailwind CSS for clean styling and smooth development.
 
 🚀 Features
 
@@ -9,63 +9,65 @@ This project focuses on component-driven UI, global state management, and clean 
 
 🔄 Real-time cart updates using Zustand
 
-⚡ Smooth and responsive UI
+⚡ Lightning-fast UI powered by Tailwind CSS
 
-🧩 Modular, reusable components
+🧩 Modular & reusable components
 
-🧭 Simple routing-ready structure
+📱 Fully responsive layout
 
-📱 Fully responsive layout for mobile & desktop
+🧭 Component-driven architecture
 
 🧰 Tech Stack
-
-Frontend:
+Frontend
 
 React (Vite)
 
-Zustand (store management)
+Zustand (global state)
 
-CSS (custom styling)
+Tailwind CSS (styling)
 
-Other:
+Mock JSON data
 
-Mock JSON data for items
+Tools
 
-CORS browser extension (for fetching Swiggy mock APIs)
+Vite dev server
+
+CORS extension (for Swiggy mock API testing)
+
+⚠️ Important: CORS Requirement
+
+If you're fetching data from any Swiggy mock API, make sure to enable a CORS extension in your browser.
+
+Recommended:
+👉 Chrome: Allow CORS: Access-Control-Allow-Origin extension
+
+Without bypassing CORS, API fetches will fail during development.
 
 📌 What This Project Demonstrates
 
-Managing global state with Zustand
+Zustand global state management
 
-Clean component architecture
+Tailwind-based responsive UI
 
-Handling UI interactions (add-to-cart, updating views)
+Component composition & prop handling
 
-Passing props effectively
+Real-time cart updates
 
-State-driven UI updates
+Clean and scalable project structure
 
-Thoughtful folder structure for scalability
+React fundamentals (state, props, hooks)
 
-This is a practice/frontend-focused project designed to level up my React fundamentals before building larger full-stack MERN applications.
+This is a frontend practice project built to strengthen my React skills before moving to larger MERN full-stack apps.
 
-🛠️ Running the Project Locally
+🛠️ Running the Project
 
 # Install dependencies
 
 npm install
 
-# Start development server
+# Start dev server
 
 npm run dev
-
-⚠️ CORS Note
-
-If you're fetching data from any Swiggy mock API, enable a CORS extension in your browser to avoid CORS errors.
-For Chrome, you can use:
-👉 "Allow CORS: Access-Control-Allow-Origin"
-
-This is ONLY for testing purposes during development.
 
 📁 Folder Structure (Simplified)
 src/
@@ -78,25 +80,23 @@ main.jsx
 
 🔮 Future Enhancements
 
-These will be implemented in future projects or extended versions:
+Remove items from cart
 
-Removing items from cart
+Quantity (increase/decrease)
 
-Quantity management (increase/decrease)
+Restaurant details page
 
-Restaurant details & dynamic menus
+Filtering & search
 
-Filters & search
+Backend (Node.js + Express + MongoDB)
 
-Backend integration with Node, Express & MongoDB
+Persistent cart
 
-User authentication
+Authentication
 
-Persistent cart storage
-
-Admin dashboard for menu management
+Admin dashboard for restaurants
 
 ❤️ Notes
 
-This project was built to strengthen my React fundamentals, especially global state management with Zustand and real-time UI updates.
-It complements my full-stack projects like MatchMate, and helps me prepare for production-level MERN applications.
+This project helped me strengthen my React, Tailwind, and Zustand skills.
+It supports my full-stack portfolio (MatchMate + upcoming MERN project) and prepares me for production-level MERN development.
