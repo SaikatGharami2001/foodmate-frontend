@@ -1,47 +1,55 @@
-🍽️ Swiggy Clone — React + Zustand
+🍽️ Swiggy Clone – React + Zustand
 
-A modern frontend food-delivery UI inspired by Swiggy.
-Built using React, Zustand, and reusable components.
+A fast, responsive food-delivery UI inspired by Swiggy.
+This project focuses on component-driven UI, global state management, and clean React architecture.
 
 🚀 Features
 
-🛍️ Add items to cart
+🛍️ Add-to-cart functionality
 
-🔄 Real-time cart updates using Zustand global state
+🔄 Real-time cart updates using Zustand
 
-⚡ Fast UI with reusable components
+⚡ Smooth and responsive UI
 
-📱 Responsive layout
+🧩 Modular, reusable components
 
-🎯 Component-driven architecture
+🧭 Simple routing-ready structure
 
-🧪 Clean and readable code organization
+📱 Fully responsive layout for mobile & desktop
 
 🧰 Tech Stack
 
+Frontend:
+
 React (Vite)
 
-Zustand (for global state)
+Zustand (store management)
 
-CSS (custom styling / flexbox & grid)
+CSS (custom styling)
 
-Mock JSON data for restaurant items
+Other:
 
-📌 What I Learned
+Mock JSON data for items
 
-Global state management with Zustand
+CORS browser extension (for fetching Swiggy mock APIs)
 
-Passing props and managing component structure
+📌 What This Project Demonstrates
 
-Handling user actions (Add to Cart)
+Managing global state with Zustand
 
-Updating UI based on global store changes
+Clean component architecture
 
-Building reusable UI components
+Handling UI interactions (add-to-cart, updating views)
 
-Clean project folder structure
+Passing props effectively
 
-🛠️ How to Run Locally
+State-driven UI updates
+
+Thoughtful folder structure for scalability
+
+This is a practice/frontend-focused project designed to level up my React fundamentals before building larger full-stack MERN applications.
+
+🛠️ Running the Project Locally
 
 # Install dependencies
 
@@ -51,6 +59,14 @@ npm install
 
 npm run dev
 
+⚠️ CORS Note
+
+If you're fetching data from any Swiggy mock API, enable a CORS extension in your browser to avoid CORS errors.
+For Chrome, you can use:
+👉 "Allow CORS: Access-Control-Allow-Origin"
+
+This is ONLY for testing purposes during development.
+
 📁 Folder Structure (Simplified)
 src/
 components/
@@ -58,24 +74,29 @@ pages/
 store/
 assets/
 App.jsx
+main.jsx
 
-🔮 Future Improvements
+🔮 Future Enhancements
 
-Item removal from cart
+These will be implemented in future projects or extended versions:
 
-Restaurant details page
+Removing items from cart
+
+Quantity management (increase/decrease)
+
+Restaurant details & dynamic menus
 
 Filters & search
 
-Backend integration (MERN)
+Backend integration with Node, Express & MongoDB
 
-Persistent cart
+User authentication
 
-Authentication
+Persistent cart storage
 
-Admin menu management
+Admin dashboard for menu management
 
 ❤️ Notes
 
-This project is built to strengthen my React fundamentals and global state management skills.
-It serves as a solid practice project, while my full-stack projects demonstrate backend expertise.
+This project was built to strengthen my React fundamentals, especially global state management with Zustand and real-time UI updates.
+It complements my full-stack projects like MatchMate, and helps me prepare for production-level MERN applications.
