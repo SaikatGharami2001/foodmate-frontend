@@ -4,7 +4,10 @@ import { restaurants } from "../utils/mockData";
 import { restaurantMenu } from "../utils/restaurantMenu";
 import { useState } from "react";
 
+import { useStore } from "../store/useStore";
+
 const RestaurantMenu = () => {
+  const setStore = useStore((state) => state.setCount);
   const { resId } = useParams();
 
   // FIND RESTAURANT DETAILS FROM LIST
@@ -55,7 +58,10 @@ const RestaurantMenu = () => {
               />
 
               <button
-                onClick={() => handleAdd(item.id)}
+                onClick={() => {
+                  setStore();
+                  handleAdd(item.id);
+                }}
                 className={`px-4 py-2 rounded-xl cursor-pointer font-semibold transition-all text-sm
                 ${
                   addedItems.includes(item.id)

@@ -2,8 +2,11 @@ import { useContext } from "react";
 import { DataContext } from "../App";
 
 import { Link } from "react-router-dom";
+import { useStore } from "../store/useStore";
 
 const Navbar = () => {
+  const count = useStore((state) => state.count);
+
   const { handleSearch, setFilteredData } = useContext(DataContext);
 
   return (
@@ -60,7 +63,7 @@ const Navbar = () => {
           <button className="relative p-2 rounded-full hover:bg-[#141a22] transition">
             <span className="text-[#F7B500] text-xl">🛒</span>
             <span className="absolute -top-1 -right-1 bg-[#FF5C8A] text-white text-[10px] px-[6px] py-[1px] rounded-full shadow-md font-semibold">
-              8
+              {count}
             </span>
           </button>
 
