@@ -1,4 +1,4 @@
-🍽️ Swiggy Clone – React + Zustand
+🍽️ Food Mate – React + Zustand
 
 A fast, responsive food-delivery UI inspired by Swiggy.
 This project focuses on component-driven UI, global state management, and clean React architecture.
