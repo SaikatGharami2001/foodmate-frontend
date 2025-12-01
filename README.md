@@ -45,7 +45,7 @@ Designed to give users a smooth, app-like experience with lightning-fast search,
 
 # 📸 **Screenshots**
 
-![Home](src/assets/home.png)
+![Home](src/assets/Home.png)
 ![Search](src/assets/Search&Filter.png)
 ![ShimmerUI](src/assets/ShimmerUI.png)
 ![Veg](src/assets/Veg.png)
@@ -115,20 +115,51 @@ npm run build
 
 ```bash
 
-foodmate/
-├── src/
-│   ├── assets/                 # Images & previews
-│   ├── components/             # UI components
-│   ├── pages/                  # Routed pages
-│   ├── store/                  # Zustand stores
-│   ├── App.jsx                 # App + Routing
-│   └── main.jsx                # Vite entry
+foodmate-frontend/
+├── public/
+│   └── favicon.ico
 │
+├── src/
+│   ├── assets/                     # App images & previews
+│   │   ├── About.png
+│   │   ├── Budget.png
+│   │   ├── Home.png
+│   │   ├── NonVeg.png
+│   │   ├── Search&Filter.png
+│   │   ├── ShimmerUI.png
+│   │   ├── TopRated.png
+│   │   └── Veg.png
+│   │
+│   ├── components/                 # Reusable UI components
+│   │   ├── About.jsx
+│   │   ├── Body.jsx
+│   │   ├── Card.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Error.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── ResMenu.jsx
+│   │   └── ShimmerUI.jsx
+│   │
+│   ├── store/                      # Zustand global store
+│   │   └── useStore.js
+│   │
+│   ├── utils/                      # Utility helpers & mock data
+│   │   ├── mockData.js
+│   │   ├── restaurantMenu.js
+│   │   └── utils.js
+│   │
+│   ├── app.css
+│   ├── App.jsx                     # App shell + Routes
+│   └── main.jsx                    # Vite entry point
+│
+├── .gitignore
+├── eslint.config.js
 ├── index.html
 ├── package.json
-├── vite.config.js
-└── README.md
-
+├── package-lock.json
+├── README.md
+└── vite.config.js
 
 
 ```
