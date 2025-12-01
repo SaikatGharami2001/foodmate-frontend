@@ -20,8 +20,8 @@ Designed to give users a smooth, app-like experience with lightning-fast search,
 
 ### 🎥 Preview
 
-> Add a GIF here for maximum impact  
-> (Example: `src/assets/preview.gif`)
+- Here’s a quick preview of FoodMate in action:
+  > ![Preview](src/assets/FoodMate.gif.mp4)
 
 <img src="src/assets/preview.gif" width="700" />
 
