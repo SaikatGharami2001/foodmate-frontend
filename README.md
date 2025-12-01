@@ -1,102 +1,171 @@
-🍽️ Food Mate – React + Zustand + Tailwind
+# 🚀 **FoodMate – Food Delivery App (React + Vite)**
 
-A fast and responsive food-delivery UI inspired by Swiggy.
-Built with React, Zustand, and Tailwind CSS for clean styling and smooth development.
+<div align="center">
 
-🚀 Features
+A blazing-fast, modern food delivery UI built with React, Vite, Tailwind & Zustand.
+Designed to give users a smooth, app-like experience with lightning-fast search, filters, cart, and more.
 
-🛍️ Add-to-cart functionality
+<br/>
 
-🔄 Real-time cart updates using Zustand
+### 🏅 Tech Stack
 
-⚡ Lightning-fast UI powered by Tailwind CSS
+![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
+![Zustand](https://img.shields.io/badge/Zustand-000000?logo=react&logoColor=white)
+![Tailwind](https://img.shields.io/badge/TailwindCSS-38B2AC?logo=tailwindcss&logoColor=white)
+![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-🧩 Modular & reusable components
+<br/>
 
-📱 Fully responsive layout
+### 🎥 Preview
 
-🧭 Component-driven architecture
+> Add a GIF here for maximum impact  
+> (Example: `src/assets/preview.gif`)
 
-🧰 Tech Stack
-Frontend
+<img src="src/assets/preview.gif" width="700" />
 
-React (Vite)
+<br/>
+</div>
+</div>
 
-Zustand (global state)
+# ✨ **Features Overview**
 
-Tailwind CSS (styling)
+- 🔍 Fast recipe search
+- 🥗 Veg / Non-Veg category filters
+- 💸 Budget & Top Rated filters
+- 🛒 Cart system with Zustand
+- ❤️ Add to favorites
+- ⚡ Shimmer UI for instant loading experience
+- 📱 Fully responsive UI
+- 🚀 Ultra-fast development with Vite
+- 🔗 Smooth navigation with React-Router
 
-Mock JSON data
+---
 
-Tools
+# 📸 **Screenshots**
 
-Vite dev server
+![Home](src/assets/home.png)
+![Search](src/assets/Search&Filter.png)
+![ShimmerUI](src/assets/ShimmerUI.png)
+![Veg](src/assets/Veg.png)
+![NonVeg](src/assets/NonVeg.png)
+![TopRated](src/assets/TopRated.png)
+![Budget](src/assets/Budget.png)
+![About](src/assets/About.png)
 
-CORS extension (for Swiggy mock API testing)
+---
 
-⚠️ Important: CORS Requirement
+# 🌍 **Live Demo**
 
-If you're fetching data from any Swiggy mock API, make sure to enable a CORS extension in your browser.
+👉 https://matchmate-frontend.vercel.app
 
-Recommended:
-👉 Chrome: Allow CORS: Access-Control-Allow-Origin extension
+---
 
-Without bypassing CORS, API fetches will fail during development.
+# ⚙️ **Getting Started**
 
-📌 What This Project Demonstrates
+Follow these steps to run the project locally.
 
-Zustand global state management
+---
 
-Tailwind-based responsive UI
+## **1️⃣ Clone the repository**
 
-Component composition & prop handling
+```bash
 
-Real-time cart updates
+git clone https://github.com/SaikatGharami2001/foodmate-frontend.git
+cd foodmate-frontend
 
-Clean and scalable project structure
+```
 
-React fundamentals (state, props, hooks)
+## **2️⃣ Install dependencies**
 
-This is a frontend practice project built to strengthen my React skills before moving to larger MERN full-stack apps.
-
-🛠️ Running the Project
-
-# Install dependencies
+```bash
 
 npm install
 
-# Start dev server
+```
+
+## **3️⃣ Start development server**
+
+```bash
 
 npm run dev
 
-📁 Folder Structure (Simplified)
-src/
-components/
-pages/
-store/
-assets/
-App.jsx
-main.jsx
+```
 
-🔮 Future Enhancements
+## **4️⃣ Build for production**
 
-Remove items from cart
+- Responsive UI
 
-Quantity (increase/decrease)
+```bash
+npm run build
+```
 
-Restaurant details page
+## **🧰 Technologies Used**
 
-Filtering & search
+| Category         | Tech         |
+| ---------------- | ------------ |
+| Framework        | React, Vite  |
+| State Management | Zustand      |
+| Routing          | React Router |
+| Styling          | Tailwind CSS |
+| Deployment       | Vercel       |
 
-Backend (Node.js + Express + MongoDB)
+## **🧱 Project Structure**
 
-Persistent cart
+```bash
 
-Authentication
+foodmate/
+├── src/
+│   ├── assets/                 # Images & previews
+│   ├── components/             # UI components
+│   ├── pages/                  # Routed pages
+│   ├── store/                  # Zustand stores
+│   ├── App.jsx                 # App + Routing
+│   └── main.jsx                # Vite entry
+│
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
 
-Admin dashboard for restaurants
 
-❤️ Notes
 
-This project helped me strengthen my React, Tailwind, and Zustand skills.
-It supports my full-stack portfolio (MatchMate + upcoming MERN project) and prepares me for production-level MERN development.
+```
+
+## **🎯 Why I Built This**
+
+FoodMate is a demonstration of real-world frontend engineering, focusing on:
+
+- Performance-optimized UI
+- Clean component architecture
+- Zustand state management
+- Routing patterns
+- Real food delivery workflows (cart + filters)
+- Production deployment on Vercel
+
+## **🧠 What I Learned**
+
+- Zustand store architecture
+- Clean & reusable React components
+- Performance tuning with Vite
+- Designing UI systems with Tailwind
+- Handling search, filters & cart logic
+- Realistic app folder structuring
+
+## **🧭 Roadmap**
+
+- 🛵 Delivery status screen
+- 🧧 Coupon & pricing system
+- 🥗 Meal recommendations
+- 🔥 Framer Motion animations
+- 📲 Push notifications
+
+## **👨‍💻 Author**
+
+- Saikat Gharami
+  GitHub: https://github.com/SaikatGharami2001
+
+```
+
+```
