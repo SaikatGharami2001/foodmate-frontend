@@ -8,7 +8,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
 
-import "./app.css";
+import "./App.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
