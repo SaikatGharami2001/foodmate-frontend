@@ -22,7 +22,7 @@ Designed to give users a smooth, app-like experience with lightning-fast search,
 
 - Here’s a quick preview of FoodMate in action:
 
-  [![FoodMate Preview](https://github.com/SaikatGharami2001/foodmate-frontend/releases/download/v1/preview.gif)](https://github.com/SaikatGharami2001/foodmate-frontend/releases/download/v1/FoodMate.gif.mp4)
+  ![FoodMate Preview](https://github.com/SaikatGharami2001/foodmate-frontend/releases/download/v1/FoodMate.gif.mp4)
 
 <img src="src/assets/preview.gif" width="700" />
 
