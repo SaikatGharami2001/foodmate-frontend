@@ -11,7 +11,6 @@ function App() {
   const [allData, setAllData] = useState([]);
   const [filteredData, setFilteredData] = useState(null);
 
-  // Fetching Data
   useEffect(() => {
     const fetchData = async () => {
       const data = await fetch(API_LINK);
@@ -21,7 +20,6 @@ function App() {
     fetchData();
   }, []);
 
-  // Search Logic
   const handleSearch = (e) => {
     const value = e.target.value.toLowerCase();
     if (value.trim() === "") {

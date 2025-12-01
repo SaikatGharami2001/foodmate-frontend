@@ -18,7 +18,7 @@ export const restaurantMenu = {
 
   379495: [
     {
-      id: "m1",
+      id: "m3",
       name: "Mutton Seekh Kebab",
       price: 299,
       description: "Juicy charcoal grilled seekh kebab",
@@ -35,14 +35,14 @@ export const restaurantMenu = {
 
   10731: [
     {
-      id: "m1",
+      id: "m4",
       name: "Chicken Biryani",
       price: 229,
       description: "Authentic Kolkata style biryani with potato & egg",
       image: "https://i.ibb.co/PhR21T6/biryani.png",
     },
     {
-      id: "m2",
+      id: "m5",
       name: "Chicken Chaap",
       price: 199,
       description: "Rich creamy Mughlai chicken chaap",
@@ -52,14 +52,14 @@ export const restaurantMenu = {
 
   25140: [
     {
-      id: "m1",
+      id: "m6",
       name: "Beef Biryani",
       price: 199,
       description: "Aromatic beef biryani with long grain rice",
       image: "https://i.ibb.co/PhR21T6/biryani.png",
     },
     {
-      id: "m2",
+      id: "m7",
       name: "Beef Bhuna",
       price: 249,
       description: "Rich spicy traditional beef bhuna",
@@ -69,14 +69,14 @@ export const restaurantMenu = {
 
   10362: [
     {
-      id: "m1",
+      id: "m8",
       name: "Special Ameen Biryani",
       price: 249,
       description: "Premium biryani with tender chicken and aloo",
       image: "https://i.ibb.co/PhR21T6/biryani.png",
     },
     {
-      id: "m2",
+      id: "m9",
       name: "Tandoori Chicken",
       price: 299,
       description: "Charcoal roasted juicy tandoori chicken",
