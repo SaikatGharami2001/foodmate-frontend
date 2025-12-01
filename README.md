@@ -21,7 +21,7 @@ Designed to give users a smooth, app-like experience with lightning-fast search,
 ### 🎥 Preview
 
 - Here’s a quick preview of FoodMate in action:
-[  <video src="./src/assets/FoodMate.gif.mp4" width="600" autoplay loop muted></video>](https://github.com/SaikatGharami2001/foodmate-frontend/releases/tag/FoodMate.gif)
+- <video src="https://github.com/SaikatGharami2001/foodmate-frontend/releases/tag/FoodMate.gif" width="600" autoplay loop muted></video>
 
 <img src="src/assets/preview.gif" width="700" />
 
