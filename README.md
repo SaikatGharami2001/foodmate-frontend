@@ -52,6 +52,8 @@ Designed to give users a smooth, app-like experience with lightning-fast search,
 ![NonVeg](src/assets/NonVeg.png)
 ![TopRated](src/assets/TopRated.png)
 ![Budget](src/assets/Budget.png)
+![AddItem](src/assets/AddItem.png)
+![RemoveItem](src/assets/RemoveItem.png)
 ![About](src/assets/About.png)
 
 ---
