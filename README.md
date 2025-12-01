@@ -60,9 +60,15 @@ Designed to give users a smooth, app-like experience with lightning-fast search,
 
 # 🌍 **Live Demo**
 
-👉 https://matchmate-frontend.vercel.app
+👉 https://foodmate-frontend.vercel.app/
 
 ---
+
+# ⚠️ **Note:**
+
+- If the menu data doesn’t load, please enable CORS in your browser.
+- You can use this Chrome extension to bypass CORS restrictions:
+- https://chromewebstore.google.com/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf
 
 # ⚙️ **Getting Started**
 
