@@ -22,7 +22,7 @@ Designed to give users a smooth, app-like experience with lightning-fast search,
 
 - Here’s a quick preview of FoodMate in action:
 
-  ![FoodMate Preview](https://s2.ezgif.com/tmp/ezgif-2c71e66fde14950d.gif)
+  ![FoodMate Preview](src/assets/FoodMate.gif)
 
 <img src="src/assets/preview.gif" width="700" />
 
